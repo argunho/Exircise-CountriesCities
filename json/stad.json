@@ -1,0 +1,91 @@
+[{
+    "id": 1,
+    "stadname": "Stockholm",
+    "countryid": 1,
+    "population": 1538517,
+    "img": "./images/city01.jpg"
+}, {
+    "id": 2,
+    "stadname": "Turku",
+    "countryid": 2,
+    "population": 269057,
+    "img": "./images/city02.jpg"
+}, {
+    "id": 3,
+    "stadname": "Norköping",
+    "countryid": 1,
+    "population": 95618,
+    "img": "./images/city03.jpg"
+}, {
+    "id": 4,
+    "stadname": "Fredrikstad",
+    "countryid": 3,
+    "population": 109907,
+    "img": "./images/city04.jpg"
+}, {
+    "id": 5,
+    "stadname": "Trondheim",
+    "countryid": 3,
+    "population": 177617,
+    "img": "./images/city05.jpg"
+}, {
+    "id": 6,
+    "stadname": "Göteborg",
+    "countryid": 1,
+    "population": 581822,
+    "img": "./images/city06.jpg"
+}, {
+    "id": 7,
+    "stadname": "Västerås",
+    "countryid": 1,
+    "population": 119373,
+    "img": "./images/city07.jpg"
+}, {
+    "id": 8,
+    "stadname": "Tampere",
+    "countryid": 2,
+    "population": 330711,
+    "img": "./images/city08.jpg"
+}, {
+    "id": 9,
+    "stadname": "Bergen",
+    "countryid": 3,
+    "population": 252772,
+    "img": "./images/city09.jpg"
+}, {
+    "id": 10,
+    "stadname": "Malmö",
+    "countryid": 1,
+    "population": 307496,
+    "img": "./images/city10.jpg"
+}, {
+    "id": 11,
+    "stadname": "Oslo",
+    "countryid": 3,
+    "population": 975744,
+    "img": "./images/city11.jpg"
+}, {
+    "id": 12,
+    "stadname": "Helsingfors",
+    "countryid": 2,
+    "population": 1249820,
+    "img": "./images/city12.jpg"
+}, {
+    "id": 13,
+    "stadname": "Oulu",
+    "countryid": 2,
+    "population": 198358,
+    "img": "./images/city13.jpg"
+}, {
+    "id": 14,
+    "stadname": "Uppsala",
+    "countryid": 1,
+    "population": 152617,
+    "img": "./images/city14.jpg"
+}, {
+    "id": 15,
+    "stadname": "Jyväskylä",
+    "countryid": 2,
+    "population": 121782,
+    "img": "./images/city15.jpg"
+}]

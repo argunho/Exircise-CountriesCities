@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    outline: none !important;
+    height: auto;
+    overflow-x: hidden;
+}
+
+button {
+    text-decoration: none !important;
+}
+
+a:link {
+    color: #383838;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #000000;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+a:active {
+    color: #B4B4B4;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input[type="search"] {
+    box-sizing: border-box !important;
+}
+
+a,
+table,
+a img {
+    outline: none !important;
+}
+
+*:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:active,
+button:active {
+    border: none !important;
+    outline: none !important;
+}
+
+.none {
+    display: none !important;
+}
+
+
+/* Container */
+
+body,
+.container {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+}
+
+.reset-btn {
+    position: absolute;
+    bottom: -100%;
+    width: 200px;
+    left: calc(50% - 100px);
+    background: #cc0000;
+    color: #FFF;
+    opacity: 0.7;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.9s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.visible-reset {
+    bottom: 15px;
+}
+
+.reset-btn:hover {
+    opacity: 1;
+}
+
+
+/* Menu */
+
+.menu {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.menu-link {
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.465);
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Berlin Sans FB";
+    line-height: 100px;
+    cursor: pointer;
+    position: relative;
+    color: #383838;
+}
+
+.p-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(180, 180, 180, 0.349);
+    transition: all 0.9s easy-in-out;
+    letter-spacing: 1px;
+}
+
+.p-link:hover {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 600;
+    border-color: transparent;
+}
+
+
+/* .visited-link {
+    background: url(../images/visited.png) rgba(68, 67, 67, 0.465);
+    background-repeat: no-repeat;
+    background-position: 35px center;
+    background-size: 7%;
+    color: #FFF;
+} */
+
+.menu-list {
+    position: absolute;
+    top: 300px;
+    left: 2%;
+    width: 96%;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+}
+
+.visible-menu-list {
+    opacity: 1;
+    top: 120px;
+}
+
+.menu-list li {
+    display: block;
+    height: 70px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.465);
+    border: 1px solid rgba(180, 180, 180, 0.349);
+    text-align: center;
+    font-size: 18px;
+    line-height: 70px;
+    font-family: "Berlin Sans FB";
+    text-transform: uppercase;
+    color: #383838;
+}
+
+.menu-link:first-child>.p-link:hover,
+.selected-sverige,
+.ul_sverige li:hover,
+.visited-sw-li {
+    color: #FECC00;
+    background: #006AA7;
+    font-weight: 600;
+}
+
+.menu-link:nth-child(2)>.p-link:hover,
+.selected-finland,
+.ul_finland li:hover {
+    background: #FFF;
+    color: #006AA7;
+    font-weight: 600;
+}
+
+.menu-link:nth-child(3)>.p-link:hover,
+.selected-norge,
+.ul_norge li:hover {
+    background: #EF2B2D;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.menu-link:nth-child(4)>.p-link:hover,
+.selected-visited,
+.ul_visited li:hover {
+    background: rgb(70, 68, 68);
+    color: #FFF;
+    font-weight: 600;
+}
+
+
+/* Countries */
+
+.countries-view {
+    width: 0;
+    height: 0;
+    margin: 200px auto;
+    opacity: 0;
+    border: 10px double #FFF;
+    border-radius: 15px;
+    display: block;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 1px -2px rgba(225, 225, 225, .9), 0 2px 2px 0 rgba(225, 225, 225, .84), 0 1px 5px 0 rgba(225, 225, 225, .82);
+}
+
+.visible-view {
+    width: 100% !important;
+    max-width: 1000px !important;
+    height: calc(100% - 400px) !important;
+}
+
+.city-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 0;
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.465);
+}
+
+.city-name,
+.city-population {
+    width: 95%;
+    margin: auto;
+    text-align: right;
+}
+
+.city-name {
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-family: "Bernard MT Condensed";
+    color: #212221ee;
+}
+
+.city-population {
+    color: rgb(50, 53, 54);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Impact;
+    padding-right: 7px;
+    color: #006AA7;
+}
+
+.make-visited {
+    font-size: 40px;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    cursor: pointer;
+    border: 3px solid #383838;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.mark-visited:hover {
+    opacity: 1;
+}
+
+.visited-btn {
+    border-style: dashed;
+    border-color: #FFF;
+    background-color: #006AA7;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 50px;
+    color: #cc0000;
+    opacity: 0.7;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.698);
+    width: 70px;
+    border-radius: 50%;
+    font-weight: 600;
+    transition: all 0.9s ease-in-out;
+}
+
+.close-btn:hover {
+    opacity: 1;
+}
+
+.populations-count {
+    width: 100%;
+    display: block;
+    line-height: 100%;
+    font-size: 100px;
+    margin-top: 200px;
+    text-align: center;
+}
