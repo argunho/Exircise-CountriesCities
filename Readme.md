@@ -1,4 +1,4 @@
-# Inlämningsuppgift: Städer och länder
+# Dropdown menu: Städer och länder (js, css, html)
 
 [Demo](https://argunho.github.io/Exircise-CountriesCities/)
 
