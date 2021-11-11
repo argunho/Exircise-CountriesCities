@@ -1,6 +1,6 @@
 # Inlämningsuppgift: Städer och länder
 
-[Demo](https://argunho.github.io/Exircise-CountriesCities/)
+[Demo](https://argunho.github.io/Exircise-CountriesCities/{:target="_blank"})
 
 ### Functions
 
