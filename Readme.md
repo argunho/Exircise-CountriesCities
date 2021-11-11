@@ -1,5 +1,9 @@
 # Inlämningsuppgift: Städer och länder
 
+[Demo](https://argunho.github.io/Exircise-CountriesCities/)
+
+### Functions
+
 01. Function setCountriesMenu()     = Körs sidan start eller omstart                        
 02. Function checkMenuList()        = Körs i flera funktionen och kontrollerar meny länks, 
                                             lägger till och tar bort extra länk för besökta städer
