@@ -1,8 +1,8 @@
 "use strict";
 
 var loc = localStorage;
-const countries_link = "https://raw.githubusercontent.com/argunho/assignments/master/Exircise-CountriesCities/json/land.json";
-const cities_link = "https://raw.githubusercontent.com/argunho/assignments/master/Exircise-CountriesCities/json/stad.json";
+const countries_link = "https://raw.githubusercontent.com/argunho/Exircise-CountriesCities/main/json/land.json";
+const cities_link = "https://raw.githubusercontent.com/argunho/Exircise-CountriesCities/main/json/stad.json";
 
 var countries, cities = [];
 var visited_list = [];
@@ -15,9 +15,9 @@ document.body.style = "background:url('./images/mapp.jpg');" +
     "background-size:cover;" +
     "background-repeat:no-repeat;";
 
-fetch(countries_link).then(function(res) {
+fetch(countries_link).then(function (res) {
     return res.json();
-}).then(function(list) {
+}).then(function (list) {
     countries = JSON.parse(JSON.stringify(list));
 
     // Run set countries function
@@ -79,9 +79,9 @@ function getCities(ev) {
         let ul = document.getElementById("menu_list_" + id);
         ul.classList.add('visible-menu-list', 'ul_' + name);
 
-        fetch(cities_link).then(function(res) {
+        fetch(cities_link).then(function (res) {
             return res.json();
-        }).then(function(list) {
+        }).then(function (list) {
             cities = JSON.parse(JSON.stringify(list));
 
             let cities_list = (id < 4) ? cities.filter(x => x.countryid == id) : JSON.parse(loc.getItem("visited_list"));
@@ -114,7 +114,7 @@ function getCityInfo(ev) {
     content.insertAdjacentHTML("beforeend", "<button class='make-visited' type='button' title='Besökt' onclick='setVisitedList(" + city.id + ")' id='visited_btn'>🏴</button>");
 
     setVisitedList(city.id, true);
-    setTimeout(function() {
+    setTimeout(function () {
         setOpacity();
     }, 300)
 }
@@ -173,18 +173,18 @@ function getPopulations() {
 
 // Reset menu
 function reset(reset = false) {
-    document.querySelectorAll("ul").forEach(function(a, b) {
+    document.querySelectorAll("ul").forEach(function (a, b) {
         a.classList.remove('visible-menu-list');
         a.innerHTML = "";
     });
-    document.querySelectorAll("#content>p").forEach(function(a, b) {
+    document.querySelectorAll("#content>p").forEach(function (a, b) {
         a.innerHTML = "";
     })
-    document.querySelectorAll("#content>button").forEach(function(a, b) {
+    document.querySelectorAll("#content>button").forEach(function (a, b) {
         a.remove();
     })
     if (reset) {
-        document.querySelectorAll("p.p-link").forEach(function(a, b) {
+        document.querySelectorAll("p.p-link").forEach(function (a, b) {
             a.classList.remove("selected-" + a.attributes.name.value);
         })
     }
@@ -209,7 +209,7 @@ function clearHistory() {
 // Help function
 function setOpacity() {
     let scale = 0.1;
-    let opacity = setInterval(function() {
+    let opacity = setInterval(function () {
         if (scale > 1)
             clearInterval(opacity);
         else {
