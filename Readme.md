@@ -1,6 +1,7 @@
 # Inlämningsuppgift: Städer och länder
 
-[Demo](https://argunho.github.io/Exircise-CountriesCities/){:target="_blank" rel="noopener"}
+[Demo](https://argunho.github.io/Exircise-CountriesCities/){:target="_blank"}
+
 ### Functions
 
 01. Function setCountriesMenu()     = Körs sidan start eller omstart                        
